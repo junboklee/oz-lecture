@@ -25,7 +25,7 @@ aside {
     padding: 1.5rem;
     margin-right: 2vw;
     font-size: 1em;
-}
+}git status
 footer {
     padding: 1.5rem;
     border-top: 0.2rem solid #333;
@@ -40,7 +40,7 @@ section {
 
 
 /* 태블릿 */
-@media (max-width 1023px) {
+@media (max-width: 1023px) {
     body {
         max-width: 90vw;
     }
