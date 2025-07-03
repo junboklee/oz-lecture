@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Registration Form</title>
+    </head>
+    <body>
+        <header>
+            헤더 시작<hr>
+            <div>
+                <h1>User Registration</h1>
+            </div>
+            네비 시작<hr>
+            <nav>
+                <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#register">회원가입</a></li>
+            </ul>
+            </nav>
+            네비 끝<hr>
+        </header>
+        헤더 끝<hr>
+        <main>
+            <dev>
+                <section>
+                    <h2>Registration Form</h2>
+                </section>
+            </dev>
+            <div>
+                <article>
+                    회원가입을 하면 더 많은 정보를 확인할 수 있습니다.
+                </article>
+            </div>
+            <div>
+            <!-- 폼 시작 -->
+                <form action="#" method="post">
+                    <p>이름 : <input type="text" id="nolabel" name="name" placeholder="아무개"></p>
+                    <p>이메일 : <input type="email" id="nolabel" name="email" placeholder="example@domain.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="유효한 이메일 주소를 입력하세요."></p>
+                    <p>비밀번호 : <input type="password" id="nolabel" name="password" placeholder="비밀번호"></p>
+                    <p>생년월일 : <input type="date" id="nolabel" name="date" min="1900-01-01" max="2025-06-30" value="date"></p>
+                    <p>나이 : <input type="number" id="nolabel" name="age" min="1" max="100"></p>
+                    <p>서비스 만족도 (1~10점) : <input type="range" id="nolabel" name="satisfaction" min="1" max="10"></p>
+                    <!-- 성별 라벨 적용 -->
+                    <p>성별 : <label><input type="radio" id="label" name="male" value="male">남성</label>
+                    <label><input type="radio" id="label" name="female" value="female">여성</label>
+                    <label><input type="radio" id="label" name="other" value="other">기타</label></p>
+                    <p>관심사 : 
+                    <!-- 라벨 for 적용 -->
+                    <input type="checkbox" id="codinglabel" name="coding" value="coding"><label for="codinglabel">코딩</label>
+                    <input type="checkbox" id="gaminglabel" name="gaming" value="gaming"><label for="gaminglabel">게임</label>
+                    <input type="checkbox" id="sportslabel" name="sports" value="sports"><label for="sportslabel">스포츠</label></p>
+                    <!-- 국가선택 셀렉트 멀티플 적용 -->
+                    <p>국가선택 : <select name="nation" multiple>
+                        <option value="Korea">한국</option>
+                        <option value="Japan">일본</option>
+                        <option value="China">중국</option>
+                        <option value="USA">미국</option>
+                        <option value="Hongkong">홍콩</option>           
+                        </select></p>
+                    <div>
+                        <button type="submit">제출</button>
+                        <button type="reset">초기화</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        메인 끝<hr>
+        <aside>
+            <h3>관련 링크</h3>
+        <ul>
+            <li><a href="#register">회원가입</a></li>
+            <li><a href="#contact-support">고객센터</a></li>
+            <li><a href="#user-term">이용약관</a></li>
+        </ul>
+        <div>
+            <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="blue" />
+            </svg>
+        </div>
+        <div>
+            <!-- 크기 지정했고 튜토리얼 이름으로 js설정을 하면 지정한 크기에 실행이 되는것 같은데
+            피드백이 필요합니다.. -->
+            <canvas id="tutorial" width="150" height="150"></canvas>
+        </div>
+        </aside>
+        aside끝<hr>
+        <footer>
+            <div>
+                <video src="./media/KakaoTalk_20250520_194840560.mp4" controls width="300"></video>
+            </div>
+            <div>© 2025 Your Website</div>
+        </footer>
+    </body>

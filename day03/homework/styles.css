@@ -1,0 +1,114 @@
+/* 기본 선택자 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 태그 선택자 */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* ID 선택자 */
+#registration-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 클래스 선택자 */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* 후손 선택자 */
+form p {
+  padding: 5px;
+}
+
+/* 자식 선택자 */
+form > p {
+  border-bottom: 1px solid #eee;
+}
+
+/* 속성 선택자 */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="range"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 버튼 스타일 */
+button[type="submit"],
+button[type="reset"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* 가상 클래스 - 버튼 호버 */
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* 가상 클래스 - select 호버 */
+select:hover {
+  border-color: #007bff;
+}
+
+/* 가상 클래스 - 첫 번째 form 그룹 */
+form > p:first-child {
+  margin-top: 20px;
+}
+
+/* 가상 클래스 - 첫 번째 option */
+select option:first-child {
+  font-weight: bold;
+}
+
+/* 라벨 스타일 */
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+/* 가상 요소 - h1 뒤에 장식 */
+h1::after {
+  content: "✨";
+  margin-left: 10px;
+}
+
+/* 가상 요소 - 각 form-group 뒤에 구분선 */
+.form-group::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+/* 가상 요소 - 필수 입력 라벨 뒤 별표 */
+label[for="name"]::after,
+label[for="email"]::after,
+label[for="password"]::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
