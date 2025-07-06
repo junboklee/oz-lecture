@@ -1,0 +1,40 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Hero 효과로 About 섹션 살짝 강조 */
+#about {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+/* 카드 내용 정렬 보정 */
+.card-title {
+  color: #0d6efd;
+}
+
+/* 버튼 유틸리티 */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* Gallery 이미지 hover 효과 */
+#gallery img {
+  transition: transform .3s ease;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* 반응형 여백 조절 */
+@media (max-width: 767px) {
+  #about img {
+    max-width: 150px;
+  }
+}
