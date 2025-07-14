@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>할 일 목록</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #taskCount {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    #taskInput {
+      width: 200px;
+    }
+
+    button {
+      margin-left: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    li span {
+      flex: 1;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .high-priority {
+      color: red;
+    }
+
+    .delete-button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .delete-button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>할 일 목록</h1>
+  <div id="taskCount">현재 할 일 : 0개</div>
+
+  <input type="text" id="taskInput" placeholder="할 일을 입력하세요">
+  <select id="priority">
+    <option value="low">낮음</option>
+    <option value="high">높음</option>
+  </select>
+  <button id="addButton">추가</button>
+  <button id="clearButton">전체 삭제</button>
+
+  <ul id="taskList"></ul>
+
+  <!-- JavaScript 파일 연결 -->
+  <script src="dom-assignment_challenge.js"></script>
+</body>
+</html>
