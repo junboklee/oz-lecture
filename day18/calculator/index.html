@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>최종 모듈화 계산기</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>계산기</h1>
+    <div id="display" class="display">0</div>
+    <div id="result" class="alert d-none"></div>
+    <div class="buttons">
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="setOperator('+')">+</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="setOperator('-')">-</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="setOperator('*')">*</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="setOperator('/')">/</button>
+        <button onclick="setOperator('^')">^</button>
+        <button onclick="resetDisplay()">C</button>
+    </div>
+    <div>
+        <button onclick="displayHistory()">기록 표시</button>
+    </div>
+    <div id="history" class="alert alert-secondary d-none"></div>
+</div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

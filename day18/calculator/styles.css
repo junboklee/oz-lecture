@@ -1,0 +1,6 @@
+body { font-family: Arial; margin: 20px; }
+.container { width: 250px; margin: auto; }
+.display { font-size: 2rem; text-align: right; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+.buttons button { width: 50px; height: 50px; margin: 5px; font-size: 1.2rem; }
+.alert { padding: 10px; margin-top: 10px; }
+.d-none { display: none; }
